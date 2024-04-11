@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Movie</h1>
+        <form action="/add" method="post">
+            <label>Title:</label>
+            <input type="text" name="title" required>
+            <label>Director:</label>
+            <input type="text" name="director" required>
+            <label>Rating:</label>
+            <div class="rating">
+                <% for(let i = 1; i <= 10; i++) { %>
+                    <input type="radio" id="star<%= i %>" name="rating" value="<%= i %>">
+                    <label for="star<%= i %>"><i class="fas fa-star"></i></label>
+                <% } %>
+            </div>
+            <input type="submit" value="Add">
+        </form>
+        <a href="/" class="btn">Back to List</a>
+    </div>
+</body>
+</html>

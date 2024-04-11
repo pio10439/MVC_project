@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    color: #ddd;
+}
+
+.rating label i {
+    font-size: 24px;
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: #ffc107;
+}
+
+.rating input[type="radio"]:checked ~ label i {
+    color: #ffc107;
+}
+
+.rating input[type="radio"]:checked ~ label i {
+    color: #ffc107;
+}
+
+.rating label:hover i,
+.rating label:hover ~ label i {
+    color: #f5c400;
+}
+
+.rating input[type="radio"]:checked ~ label:hover i,
+.rating input[type="radio"]:checked ~ label:hover ~ label i {
+    color: #f5c400;
+}
+
+.rating input[type="radio"]:checked ~ label:hover ~ label:hover i {
+    color: #ddd;
+}
+
+.rating input[type="radio"]:checked ~ label i,
+.rating input[type="radio"]:checked ~ label:hover i,
+.rating input[type="radio"]:checked ~ label:hover ~ label i {
+    color: #ffc107;
+}
+
+.rating label:hover i,
+.rating input[type="radio"]:checked ~ label:hover ~ label i {
+    color: #f5c400;
+}
+
+.rating input[type="radio"]:checked ~ label:hover i {
+    color: #ffc107;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-group a {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-group a:hover {
+    background-color: #c82333;
+}

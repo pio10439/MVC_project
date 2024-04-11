@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Collection</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Collection</h1>
+        <ul>
+            <% movies.forEach(movie => { %>
+                <li>
+                    <strong><%= movie.title %></strong> - <%= movie.director %> 
+                    <% if (movie.watched) { %>
+                        (Watched)
+                    <% } %>
+                    <div class="button-group">
+                        <a href="/edit/<%= movie.id %>">Edit</a>
+                        <a href="/watched/<%= movie.id %>">Mark as Watched</a>
+                        <a href="/delete/<%= movie.id %>">Delete</a>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+        <a href="/add" class="btn">Add New Movie</a>
+    </div>
+</body>
+</html>
